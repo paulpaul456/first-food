@@ -1,0 +1,331 @@
+
+  .mycart {
+    background: url(../images/mycartimages/background.png);
+    width: 100%;
+    min-height: 1400px;
+    background-size: contain;
+    .section1-div1 {
+        text-align: center;
+    
+    }
+    
+    .section1-svg1 {
+        width: 100%;
+        min-height: 50px;
+        margin-top: 100px;
+    }
+    
+    .section1-div2 {
+        width: 100%;
+        margin: auto;
+        
+    
+    }
+    
+    .section1-div2-1 {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    .section1-div2-1-svg {
+        width: 30%;
+        height: 60px;
+        margin-top: 30px;
+    
+    
+    }
+    .section1-div2-1 div{
+        text-align: center;
+    }
+    
+    .section1-div2-2 {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 1200px;
+    
+    }
+    
+    .section1-div2-2-p {
+    
+        margin: 30px 0px 0px 55px;
+    }
+    
+    .section1-div2-2-svg {
+        max-width: 300px;
+        min-height: 80px;
+    }
+    
+    /*以上第一區塊*/
+    /*以下購物車區塊*/
+    .section1-div3-svg1 {
+        width: 250px;
+    }
+    
+    .section1-div3-p1 {
+        font-weight: bold;
+        margin: 20px 0 20px 30px;
+    }
+    
+    .section1-cart {
+        margin: 30px 0 50px 0;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .section1-cart-list{
+        box-shadow:  1px 1px 5px black;
+    }
+    .section1-cart-list-left-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .section1-cart-list-left-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .section1-cart-list-left {
+        display: flex;
+    }
+    
+    .product-category {
+        text-align: center;
+        margin: 10px 0 10px 0;
+        color: white;
+        background-color: #0089A7;
+        font-weight: bold;
+    }
+    
+    .section1-cart-list-left-1 {
+        margin: 10px 100px 0 30px;
+    }
+    
+    .section1-cart-list-left-p {
+        margin-top: 40px;
+    }
+    .section1-cart-list-left-4p{
+        margin-left: -50px;
+    }
+    .section1-cart-list-left-input {
+        margin-top: 10px;
+    }
+    
+    .section1-cart-list-right {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    
+    .section1-svg2 {
+        width: 100%;
+        min-height: 50px;
+    
+    }
+    
+    .section1-cart-list-right-p1 {
+        color: #AC1515;
+    }
+    .item-count-inp{
+        max-width: 70px;
+    }
+    .decrement{
+        cursor: pointer; 
+    }
+    .increment{
+        cursor: pointer; 
+    }
+    .section1-cart-list-right-nextbuy{
+        margin: 30px 0 10px 0;
+        cursor: pointer; 
+    }
+    .section1-cart-list-right-delete{
+        cursor: pointer;
+    }
+    /* 以下CARTFOOTER */
+    .cart-footer{
+        width: 100%;
+        background-color: #707070;
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-footer-left-0{
+        background: #0089A7;
+        color: white;
+        max-width: 120px;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0 0px 20px;
+        cursor: pointer;
+    }
+    .cart-footer-left-1{
+        background: #AC1515;
+        color: white;
+        max-width: 120px;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 0 5px 20px;
+        cursor: pointer;
+      
+    }
+    .cart-footer-left-2{
+        background: #AC1515;
+        color: white;
+        max-width: 120px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0 10px 20px;
+        cursor: pointer;
+    }
+    .cart-footer-div1{
+      display: flex;
+      flex-direction: column;         
+          
+      width: 100%;
+      height: 100%;       
+      
+    }
+    .cart-footer-text{
+        font-size: 16px;
+        letter-spacing:2px;
+        color: white;
+        font-weight: bold;
+        text-align: right;
+    
+    }
+    .cart-footer-nt{
+        color: #ffb11b;
+        letter-spacing:2px;
+        display: inline;
+        font-weight: bold;
+    }
+    .cart-footer-right{
+        margin: 30px 40px 0 0;
+    }
+    .cart-alert{
+        background: white;
+        border: 1px solid ;
+        margin-top: 60px;
+    }
+    .cart-alert-p-red{
+        color: #AC1515;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .cart-alert-p{
+        font-weight: bold;
+        margin: 20px ;
+    }
+    /* 以下為繼續購買以及結帳 */
+    .checkout{
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .checkout-1{
+        background:#AC1515 ;
+        color: white;
+       width: 140px;
+       min-height: 40px;
+       text-align: center;
+       line-height: 50px;
+       font-weight: bold;
+       margin-right: 80px;
+       cursor: pointer;
+      
+    }
+    .checkout-2{
+        background:#0089A7 ;
+        color: white;
+        width: 100px;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .cart-rwd-p{
+        display: none;
+    }
+    .check{
+        background-color: rgb(249, 253, 207);
+        
+    }
+    .checkmycollect{
+        position: fixed;
+        background: #0089A7;
+        color: white;
+        writing-mode: vertical-lr;
+        right: 0;
+        top:0;
+        
+        font-weight: bold;
+        height: 150px;
+        text-align: center;
+     
+      
+
+    }
+    .section1-cart-list-left-4p-rwd{
+        display: none;
+    }
+    @media screen and (max-width:480px) { 
+        .section1-div3-svg1{
+            width: 150px;
+        }
+        .section1-div2-1 div p{
+            font-size: 10px;
+        }
+        .section1-svg2{
+            display: none;
+        }
+        .cart-rwd-p{
+        display: inline;
+        }
+        .section1-cart {
+        margin: 30px 0 50px 0;
+        width: 100%;
+        background-color: white;
+        min-height: 450px;
+       }
+       .section1-cart-list{
+           min-height: 450px;
+       }
+       .cart-footer-div1{
+        display: flex;
+        justify-content: center;            
+        width: 100%;
+        height: 100%;     
+      
+     }
+     .cart-footer-right{
+        margin: 20px 40px 20px 0;
+     }
+     .section1-cart-list-left-image{
+         width:220px;
+         height:200px;
+     }
+     .section1-cart-list-left-1{
+         margin-top: 100px;
+     }
+     .section1-cart-list-right-delete{
+         margin: 0 0 10px 0;
+     }
+     .section1-cart-list-left-4p-rwd{
+         margin: 20px 0 0 15px;
+         display: block;
+     }
+     .section1-cart-list-left-4p{
+         display: none;
+     }
+     .checkmycollect{
+         display: none;
+     }
+    }   
+    
+}
+

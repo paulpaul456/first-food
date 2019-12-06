@@ -1,0 +1,96 @@
+.buystep {
+    background: url(../images/mycartimages/background.png);
+    width: 100%;
+    height: 1600px;
+    background-size: contain;
+    .section1-div1 {
+        text-align: center;
+    
+    }
+    
+    .section1-svg1 {
+        width: 100%;
+        min-height: 50px;
+        margin-top: 100px;
+    }
+    
+    .section1-div2 {
+        width: 100%;
+        margin: auto;
+        border-left: 1px solid #707070;
+        border-right: 1px solid #707070;
+        min-height: 1200px;
+    }
+    
+    .section1-div2-1 {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    .section1-div2-1-svg {
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+    
+    
+    }
+    
+    .section1-div2-2 {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 1200px;
+    
+    }
+    
+    .section1-div2-2-p {
+    
+        margin: 30px 0px 0px 55px;
+    }
+    
+    .section1-div2-2-svg {
+        max-width: 300px;
+        min-height: 80px;
+    }
+    
+    /*以上第一區塊*/
+    .section2-div1 {
+        margin: 80px 0 80px 0;
+    }
+    
+    .section2-div1-1 {
+        display: flex;
+    
+    }
+    
+    .section2-div1-p {
+        line-height: 10px;
+        margin-right: 5px;
+    }
+    
+    .section2-line1 {
+        width: 100%;
+        height: 1px;
+    }
+    
+    .section2-div2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 80px 0 80px 0;
+    
+    }
+    .section2-div2-1{
+        display: flex;
+    }
+    .section2-div2-1-svg{
+        display: flex;
+        margin-top: 5px;
+    }
+    .section2-div2-p{
+        color: #707070;
+    }
+}
+

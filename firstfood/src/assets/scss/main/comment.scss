@@ -1,0 +1,372 @@
+
+@media (min-width: $m-phones) {
+    .sec-comment {
+      .tc-danger {
+        color: $c-danger;
+        font-weight: 900;
+      }
+      .profile{
+          padding: 0;
+      }
+      .movelogo{
+          display: flex;
+          justify-content: center;
+      }
+      .titleLog {
+        width: 100px;
+        height: 102px;
+      }
+      .title {
+        top: 40px;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 5px;
+        color: $c-danger;
+      }
+      .img-border {
+        border: 1px solid transparent;
+        width: 100%;
+        height: 78px;
+        overflow: hidden;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .com-text{
+        padding: 0px;
+      }
+      .bortop {
+        border-top: 1px solid black;
+      }
+      .borleft {
+        border-left: 1px solid black;
+      }
+      .borbot {
+        border-bottom: 1px solid black;
+      }
+      .borright {
+        border-right: 1px solid black;
+      }
+      .h1rem {
+        height: 32px;
+      }
+      .icon1 {
+        width: 30px;
+      }
+      .col-x{
+        display: none;
+      }
+      .btn2 {
+        padding: 10px 20px;
+        margin: 40px auto;
+        text-decoration: none;
+        background: $c-danger;
+        color: rgb(255, 255, 255);
+      }
+      .w100{
+          width: 100%;
+      }
+      .borbox{
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .row100{
+        width: 100%;
+      }
+      .w10percentage{
+        width: 10%;
+      }
+      .w10percentage img{
+        width: 90%;
+        height: 20%;
+      }
+      .w30percentage{
+        width: 30%;
+      }
+      .w70percentage{
+        width: 70%;
+      }
+      .w80percentage{
+        width: 80%;
+      }
+      .pho{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .pho img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .peoname{
+        text-align: center;
+        color: $c-danger;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .icon11{
+        width: 30px;
+        height: 30px;
+        margin: 0 25px;
+        text-align: center;
+      }
+      .lgw10percentage{
+        width: 0;
+      }
+      .textcon{
+       
+      }
+    }
+  }
+@media (min-width: $m-phone) {
+    .sec-comment {
+      .tc-danger {
+        color: $c-danger;
+        font-weight: 900;
+      }
+      .profile{
+          padding: 0;
+      }
+      .movelogo{
+          display: flex;
+          justify-content: center;
+      }
+      .titleLog {
+        width: 100px;
+        height: 102px;
+      }
+      .title {
+        top: 40px;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 5px;
+        color: $c-danger;
+      }
+      .img-border {
+        border: 1px solid transparent;
+        width: 100%;
+        height: 78px;
+        overflow: hidden;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .com-text{
+        padding: 0px;
+      }
+      .bortop {
+        border-top: 1px solid black;
+      }
+      .borleft {
+        border-left: 1px solid black;
+      }
+      .borbot {
+        border-bottom: 1px solid black;
+      }
+      .borright {
+        border-right: 1px solid black;
+      }
+      .h1rem {
+        height: 32px;
+      }
+      .icon1 {
+        width: 30px;
+      }
+      .col-x{
+        display: block;
+      }
+      .btn2 {
+        padding: 10px 20px;
+        margin: 40px auto;
+        text-decoration: none;
+        background: $c-danger;
+        color: rgb(255, 255, 255);
+      }
+      .w100{
+          width: 100%;
+      }
+      .borbox{
+        border: none;
+      }
+      .pho{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .peoname{
+        text-align: center;
+        color: $c-danger;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+@media (min-width: $m-pad) {
+    .sec-comment {
+      .tc-danger {
+        color: $c-danger;
+        font-weight: 900;
+      }
+      .profile{
+          padding: 0;
+      }
+      .movelogo{
+          display: flex;
+          justify-content: center;
+      }
+      .titleLog {
+        width: 100px;
+        height: 102px;
+      }
+      .title {
+        top: 40px;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 5px;
+        color: $c-danger;
+      }
+      .img-border {
+        border: 1px solid transparent;
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .bortop {
+        border-top: 1px solid black;
+      }
+      .borleft {
+        border-left: 1px solid black;
+      }
+      .borbot {
+        border-bottom: 1px solid black;
+      }
+      .borright {
+        border-right: 1px solid black;
+      }
+      .h1rem {
+        height: 32px;
+      }
+      .icon1 {
+        width: 30px;
+      }
+      .btn2 {
+        padding: 10px 20px;
+        margin: 40px auto;
+        text-decoration: none;
+        background: $c-danger;
+        color: rgb(255, 255, 255);
+      }
+      .w100{
+          width: 100%;
+      }
+      .pho{
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .peoname{
+        text-align: center;
+        color: $c-danger;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .lgw10percentage{
+        width: 15%;
+      }
+      .w30percentage{
+        width: 25%;
+      }
+      .w70percentage{
+        width: 60%;
+      }
+      
+    }
+  }
+@media (min-width: $m-pcs) {
+  .sec-comment {
+    .w800 {
+      width: 800px;
+    }
+    .col-lg-0{
+        display: none;
+    }
+    .tc-danger {
+      color: $c-danger;
+      font-weight: 900;
+    }
+    .titleLog {
+      width: 100px;
+      height: 102px;
+    }
+    .title {
+      top: 40px;
+      left: 58px;
+      letter-spacing: 5px;
+      font-weight: 900;
+      color: $c-danger;
+    }
+    .img-border {
+      border: 1px solid transparent;
+      width: 110px;
+      height: 110px;
+      overflow: hidden;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .bortop {
+      border-top: 1px solid black;
+    }
+    .borleft {
+      border-left: 1px solid black;
+    }
+    .borbot {
+      border-bottom: 1px solid black;
+    }
+    .borright {
+      border-right: 1px solid black;
+    }
+    .h1rem {
+      height: 32px;
+    }
+    .icon1 {
+      width: 30px;
+    }
+    .btn2 {
+      padding: 10px 20px;
+      margin: 40px auto;
+      text-decoration: none;
+      background: $c-danger;
+      color: rgb(255, 255, 255);
+    }
+    .w100{
+        width: 100%;
+    }
+    .pho{
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  }
+}

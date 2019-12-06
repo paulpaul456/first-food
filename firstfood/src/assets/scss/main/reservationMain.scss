@@ -1,0 +1,364 @@
+//main
+@media (min-width: $m-pad) {
+    .reservationContainer {
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      transition: 0.6s;
+      transform: scale(1);
+      opacity: 1;
+
+      &.active {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      .backBlock {
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .reservationMain {
+        background-color: $c-light;
+        height: 90vh;
+        left: 50%;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 90vw;
+        z-index: 1001;
+
+        .reservationList {
+          $listMarginTop: 30px;
+          padding-left: 10vw;
+          padding-right: 10vw;
+          margin-top: $listMarginTop;
+
+          .tableListHead {
+            margin-top: $listMarginTop;
+            $listLineHead: 40px;
+            color: white;
+            width: 100%;
+            height: $listLineHead;
+            background-color: $c-grey;
+
+            h5 {
+              line-height: $listLineHead;
+            }
+          }
+
+          .tableListBody {
+            margin-top: $listMarginTop;
+
+            .listText {
+              p {
+                margin-bottom: 15px;
+              }
+            }
+
+            .listNum {
+              .numSelect {
+                margin-bottom: 15px;
+
+                p {
+                  margin: 0;
+                }
+
+                i {
+                  cursor: pointer;
+                }
+              }
+            }
+
+
+            .dateSelect, .timeSelect, .addressSelect {
+              p {
+                cursor: pointer;
+                border: 1px solid $c-lightGrey;
+              }
+            }
+
+            .dateSelect {
+            }
+
+            .timeSelect {
+              .timeSelectDown {
+                cursor: pointer;
+                width: calc(100% - 30px);
+                max-height: 52px;
+                transition: .4s;
+                background-color: white;
+                overflow: hidden;
+                z-index: 1004;
+
+                &.active {
+                  border: none;
+                  max-height: 0;
+                }
+
+                border: 1px solid $c-lightGrey;
+              }
+            }
+
+            .addressSelect {
+              height: 42px;
+            }
+          }
+
+          .tableListLine {
+            background-color: $c-grey;
+            height: 1px;
+            margin-top: 15px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+          }
+        }
+
+        .reservationCalendar {
+          position: relative;
+          margin-top: 25px;
+          height: 300px;
+          transition: 1s;
+          transform: translateX(-80%);
+          margin-left: 50vw;
+          opacity: 1;
+          z-index: 1010;
+
+          &.active {
+            //display: none;
+            opacity: 0;
+            transform: translateX(-70vw);
+          }
+        }
+
+        .reservationMap {
+          width: 40%;
+          height: 320px;
+          overflow: hidden;
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+          transition: 1s;
+          transform: translateX(-140%);
+          margin-top: 20px;
+          opacity: 1;
+
+          &.active {
+            //display: none;
+            opacity: 0;
+            transform: translateX(100%);
+          }
+        }
+
+        .reservationFoot {
+          width: 100%;
+          position: absolute;
+          bottom: 20px;
+          z-index: 1000;
+
+          .reservationRules {
+            margin-bottom: 20px;
+            line-height: 28px;
+
+            i {
+              transform: rotate(45deg);
+            }
+          }
+
+          .reservationButton {
+            border-radius: 2px;
+            cursor: pointer;
+            width: 130px;
+            height: 50px;
+            color: white;
+
+            h5 {
+              margin: 0;
+              //transform: translateY(50%);
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+@media (max-width: $m-pad) {
+    .reservationContainer {
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      transition: 0.6s;
+      transform: scale(1);
+      opacity: 1;
+      &.active{
+        opacity: 0;
+        transform: scale(0);
+      }
+      .backBlock {
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .reservationMain {
+        background-color: $c-light;
+        height: 90vh;
+        left: 50%;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 90vw;
+        z-index: 1001;
+
+        .reservationList {
+          $listMarginTop: 30px;
+          padding-left: 10vw;
+          padding-right: 10vw;
+          margin-top: $listMarginTop;
+
+          .tableListHead {
+            margin-top: $listMarginTop;
+            $listLineHead: 40px;
+            color: white;
+            width: 100%;
+            height: $listLineHead;
+            background-color: $c-grey;
+
+            h5 {
+              line-height: $listLineHead;
+            }
+          }
+
+          .tableListBody {
+            margin-top: $listMarginTop;
+            .listText{
+              p{
+                margin-bottom: 15px;
+              }
+            }
+            .listNum{
+              .numSelect {
+                margin-bottom: 15px;
+                p{
+                  margin: 0;
+                }
+                i {
+                  cursor: pointer;
+                }
+              }
+            }
+
+
+            .dateSelect, .timeSelect ,.addressSelect {
+              p {
+                cursor: pointer;
+                border: 1px solid $c-lightGrey;
+              }
+            }
+            .dateSelect{}
+            .timeSelect{
+              .timeSelectDown{
+                cursor: pointer;
+                width: calc(100% - 30px);
+                max-height: 52px;
+                transition: .4s;
+                background-color: white;
+                overflow: hidden;
+                z-index: 1004;
+                &.active{
+                  border: none;
+                  max-height: 0;
+                }
+                border: 1px solid $c-lightGrey;
+              }
+            }
+            .addressSelect{
+
+            }
+          }
+
+          .tableListLine {
+            background-color: $c-grey;
+            height: 1px;
+            margin-top: 15px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+          }
+        }
+        .reservationCalendar{
+          position: relative;
+          margin-top: 25px;
+          height: 300px;
+          transition: 1s;
+          transform: translateX(-80%);
+          margin-left: 50vw;
+          opacity: 1;
+          z-index: 1010;
+          &.active{
+            //display: none;
+            opacity: 0;
+            transform: translateX(-70vw);
+          }
+        }
+        .reservationMap{
+          width: 40%;
+          height: 320px;
+          overflow: hidden;
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+          transition: 1s;
+          transform: translateX(-140%);
+          margin-top: 20px;
+          opacity: 1;
+          &.active{
+            //display: none;
+            opacity: 0;
+            transform: translateX(100%);
+          }
+        }
+        .reservationFoot {
+          width: 100%;
+          position: absolute;
+          bottom: 20px;
+          z-index: 1000;
+          .reservationRules {
+            margin-bottom: 20px;
+            line-height: 28px;
+            i {
+              transform: rotate(45deg);
+            }
+          }
+
+          .reservationButton {
+            border-radius: 2px;
+            cursor: pointer;
+            width: 130px;
+            height: 50px;
+            color: white;
+
+            h5 {
+              margin: 0;
+              //transform: translateY(50%);
+            }
+          }
+        }
+      }
+
+    }
+}
+
+@media (min-width: $m-pcs) {
+  #wrapper {
+
+  }
+}
+
+@media (max-width: $m-pcs) {
+  #wrapper {
+
+  }
+}
+

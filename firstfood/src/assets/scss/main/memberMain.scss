@@ -1,0 +1,215 @@
+// MemberOrder
+@media (min-width: $m-phones){
+    .ordercostlist{
+     .txtdanger{
+        color: $c-danger;
+        font-weight: 800;
+      }
+     .w100{
+       width: 100%;
+     }
+     .w50{
+       width: 50%;
+     }
+     .waitblock{
+       display: none;
+     }
+     .waitblock.active{
+       display: block;
+     } 
+    }
+    .ordertable{
+     .txtdanger{
+       color: $c-danger;
+     }
+     .txtblue{
+      color: $c-info;
+    }
+     .txtgreen{
+      color: $c-success;
+      font-weight: 900;
+    }
+     .fw700{
+       font-weight: 700;
+     }
+     .xx{
+       display: none;
+     }   
+     .title{
+       background-color:$c-grey;
+       color: rgb(255, 255, 255);
+     }
+     .w25{
+       width: 25%;
+       text-align: center;
+       padding: 5px;
+     }
+     .w33{
+       width: 33%;
+       text-align: left;
+       padding: 5px;  
+     }
+     .bortop {
+       border-top: 1px solid black;
+     }
+     .borleft {
+       border-left: 1px solid black;
+     }
+     .borbot {
+       border-bottom: 1px solid black;
+     }
+     .borright {
+       border-right: 1px solid black;
+     }
+     .bigtittle{
+       background: $c-bg2;
+       color: rgb(0, 0, 0);
+     }
+     .sm-0{
+        display: none;
+     }
+     .sm-12{
+        display: block;
+     }
+     .btn1{
+        background-color: $c-danger;
+        color: rgb(255, 255, 255);
+    }
+     .w50{
+        width: 50%;
+        padding: 5px;
+    }     
+   }
+   }
+   
+@media (min-width: $m-phone){
+    .ordertable{
+     .title{
+       background-color:$c-grey;
+       color: rgb(255, 255, 255);
+     }
+     .w25{
+       width: 25%;
+       text-align: center;
+       padding: 5px;
+     }
+     .w33{
+       width: 33%;
+       text-align: left;
+       padding: 5px;  
+     }
+     .bortop {
+       border-top: 1px solid black;
+     }
+     .borleft {
+       border-left: 1px solid black;
+     }
+     .borbot {
+       border-bottom: 1px solid black;
+     }
+     .borright {
+       border-right: 1px solid black;
+     }
+     .bigtittle{
+       background: $c-bg2;
+       color: rgb(0, 0, 0);
+     }
+     .sm-0{
+        display: none;
+     } 
+     .sm-12{
+        display: block;
+     }
+     .btn1{
+         background-color: $c-danger;
+         text-align: center;
+         color: rgb(255, 255, 255);
+     }
+     .w50{
+         width: 50%;
+         padding: 5px;
+     }  
+   }
+   }
+   
+@media (min-width: $m-pad){
+    .ordertable{
+     .title{
+       background-color:$c-grey;
+       color: rgb(255, 255, 255);
+     }
+     .w25{
+       width: 25%;
+       text-align: center;
+       padding: 5px;
+     }
+     .w33{
+       width: 33%;
+       text-align: left;
+       padding: 5px;  
+     }
+     .bortop {
+       border-top: 1px solid black;
+     }
+     .borleft {
+       border-left: 1px solid black;
+     }
+     .borbot {
+       border-bottom: 1px solid black;
+     }
+     .borright {
+       border-right: 1px solid black;
+     }
+     .bigtittle{
+       background: $c-bg2;
+       color: rgb(0, 0, 0);
+     }
+     .sm-0{
+        display: block;
+     }
+     .sm-12{
+        display: none;
+      }   
+   }
+   }
+   
+@media (min-width: $m-pcs){
+ .ordertable{
+  .title{
+    background-color:$c-grey;
+    color: rgb(255, 255, 255);
+  }
+  .w25{
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+  }
+  .w33{
+    width: 33%;
+    text-align: left;
+    padding: 5px;  
+  }
+  .bortop {
+    border-top: 1px solid black;
+  }
+  .borleft {
+    border-left: 1px solid black;
+  }
+  .borbot {
+    border-bottom: 1px solid black;
+  }
+  .borright {
+    border-right: 1px solid black;
+  }
+  .bigtittle{
+    background: $c-bg2;
+    color: rgb(0, 0, 0);
+  }
+  .sm-0{
+    display: block;
+  }
+  .sm-12{
+    display: none;
+  }  
+}
+}

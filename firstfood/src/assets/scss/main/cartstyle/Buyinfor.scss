@@ -1,0 +1,122 @@
+.buyinfor {
+    background: url(../images/mycartimages/background.png);
+    width: 100%;
+    min-height: 1900px;
+    background-size: contain;
+    .buy-imf-head-svg {
+        width: 100%;
+        min-height: 50px;
+        margin-top: 100px;
+    }
+    
+    .buy-imf-head-p1 {
+        font-weight: bold;
+        color: #AC1515;
+        margin: 30px 0 30px 20px;
+        font-size: 25px;
+    
+    }
+    
+    .buy-imf-head-p2 {
+        font-weight: bold;
+        margin: 0 0 30px 20px;
+    }
+    
+    /*以上為第一區塊HEADER*/
+    .buy-imf-body-red-p {
+        color: #AC1515;
+        font-weight: bold;
+        margin: 10px 0 20px 0;
+    }
+    
+    .buy-imf-body-list1 {
+        border: 1px solid #707070;
+        background: white;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+    
+    .buy-imf-body-list1-inp1 {
+        margin: 20px 0 20px 0;
+    }
+    
+    .buy-imf-body-card-alert {
+        font-size: 5px;
+        color: #707070;
+    }
+    
+    .customer-imf {
+        margin: 20px 0 0 0;
+    }
+    
+    .customer-imf input {
+        margin-left: 50px;
+        width: 300px;
+        height: 25px;
+    }
+    
+    .customer-imf .email {
+        margin: 0 0 0 36px;
+    }
+    .customer-imf-check{
+        margin: 30px 0px 30px 85px ;
+    }
+    .customer-imf .recieve-people{
+        margin-left: 35px;
+    }
+    .customer-imf .email2{
+        margin: 0 0 20px 36px;
+    }
+    /*以上為BODY*/
+    .buy-imf-alert{
+        background: white;
+        border: 1px solid  #707070 ;
+        margin-top: 60px;
+    }
+    .buy-imf-alert-p-red{
+        color: #AC1515;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .buy-imf-alert-p{
+        font-weight: bold;
+        margin: 20px ;
+    }
+    .next-or-prev{
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .prev{
+        background:#AC1515 ;
+        color: white;
+       width: 140px;
+       min-height: 40px;
+       text-align: center;
+       line-height: 50px;
+       font-weight: bold;
+       margin-right: 80px;
+       cursor: pointer;
+    }
+    .next{
+        background:#0089A7 ;
+        color: white;
+       width: 140px;
+       min-height: 40px;
+       text-align: center;
+       line-height: 50px;
+       font-weight: bold;
+     
+       cursor: pointer;
+    }
+    @media screen and (max-width:480px) { 
+        .customer-imf input{
+            margin-left: 50px;
+        width: 200px;
+        height: 25px;
+        }
+    }
+    
+}
+

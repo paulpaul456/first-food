@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <title>初食</title>
+    <style>
+      * {
+        /* border: 1px solid red; */
+      }
+      .w1 {
+        height: 32px;
+      }
+      .w2 {
+        font-size: 3rem;
+      }
+      .tc {
+        text-align: center;
+      }
+      .bb {
+        border-bottom: 2px solid black;
+      }
+      .bt {
+        border-top: 2px solid black;
+      }
+      .br {
+        border-right: 1px solid black;
+      }
+      .bl {
+        border-left: 1px solid black;
+      }
+      .sp {
+        letter-spacing: 5px;
+      }
+      .upupup {
+        /* position: absolute; */
+        top: 40px;
+        left: 45px;
+        letter-spacing: 5px;
+      }
+      .btn1 {
+        border: 1px solid black;
+        padding: 10px 20px;
+        margin: 40px auto;
+        text-decoration: none;
+      }
+      .btn2 {
+        /* border: 1px solid black; */
+        padding: 10px 20px;
+        margin: 40px auto;
+        text-decoration: none;
+        background: chocolate;
+        color: rgb(255, 255, 255);
+      }
+      .num {
+        width: 100px;
+        height: 25px;
+        border: 1px solid black;
+      }
+      .circlee {
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: coral;
+        width: 1rem;
+        height: 1rem;
+      }
+      .imgborder {
+        border: 1px solid transparent;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+      }
+      .imgborder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .container960 {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .sec-1 .logo img {
+        margin-left: 50px;
+      }
+      .sec-1 .product01 .wvertical-lr {
+        writing-mode: vertical-lr;
+      }
+      .sec-1 .product01 .lineh {
+        line-height: 500%;
+        padding-top: 180%;
+      }
+      .sec-1 .product01 .bordertopdown {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        line-height: 50%;
+        padding-top: 15%;
+        margin-top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container960">
+      <section class="sec-1">
+        <div class="titleLog d-flex m-3">
+          <div>
+            <div>First</div>
+            <div>Food</div>
+          </div>
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="" width="50px" />
+          </div>
+        </div>
+        <div class="product01 row">
+          <div class="bg01 col-8 p-0">
+            <img
+              class=""
+              src="./assets/images/Carousel1.jpg"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-1 p-0 mt-5">
+            <a class="wvertical-lr lineh" href="">
+              <img src="./assets/images/logo.svg" alt="" width="20px" />
+              <span> 豆白豆購買</span></a
+            >
+          </div>
+          <div class="col-2 p-0 mt-5 ">
+            <div class="bordertopdown wvertical-lr">
+              <p class="sp">天然飽滿黃盛</p>
+              <p class="sp">天然飽滿黃盛</p>
+              <p class="sp">天然飽滿黃盛</p>
+            </div>
+          </div>
+          <div class="col-1  mt-n5">
+            <div class="row">
+              <div class="wvertical-lr m-0 w2 col-6">豆白豆黃豆黃好好吃</div>
+              <div class="wvertical-lr m-0 col-2">豆白豆</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between mt-5 mb-4">
+          <div class="col-6 p-0 d-flex">
+            <div class="br pr-5">詳細照片</div>
+            <div class="pl-5">
+              <img src="./assets/images/logo.svg" alt="" width="20px" />
+              <span>燈相看大圖</span>
+            </div>
+          </div>
+          <div class="col-4 p-0 tc bb">from 中壢 陳先生</div>
+        </div>
+      </section>
+      <section class="sec-2 mt-5 mb-5 row">
+        <div class="col-8 p-0">
+          <div class="d-flex justify-content-between">
+            <div class="m-3">
+              <img src="./assets/images/1.jpg" alt="" width="100%" />
+            </div>
+            <div class="m-3">
+              <img src="./assets/images/1.jpg" alt="" width="100%" />
+            </div>
+            <div class="m-3">
+              <img src="./assets/images/1.jpg" alt="" width="100%" />
+            </div>
+            <div class="m-3">
+              <img src="./assets/images/1.jpg" alt="" width="100%" />
+            </div>
+            <div class="m-3">
+              <img src="./assets/images/1.jpg" alt="" width="100%" />
+            </div>
+          </div>
+          <div class="row justify-content-between mb-5">
+            <div class="col-5">
+              <div class="bt d-flex pt-3">
+                <div class="circlee"></div>
+                <p class="ml-3">原料</p>
+              </div>
+              <div class="bt d-flex pt-3">
+                <div class="circlee"></div>
+                <p class="ml-3">原料</p>
+              </div>
+              <div class="bt d-flex pt-3">
+                <div class="circlee"></div>
+                <p class="ml-3">原料</p>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="bt pt-3">
+                心得第一心得第一心得第一心得第一心得第一心得第一
+                心得第一心得第一心得第一心得第一心得第一心得第一
+                心得第一心得第一心得第一心得第一心得第一心得第一
+                心得第一心得第一心得第一心得第一心得第一心得第一
+                心得第一心得第一心得第一心得第一心得第一心得第一
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between bt">
+            <div class="col-5">
+              <div class="mt-4 mb-4">
+                <img src="./assets/images/logo.svg" alt="" width="20px" /><a
+                  href=""
+                  >相關(米果)產品</a
+                >
+              </div>
+              <div class="mt-4 mb-4">
+                <img src="./assets/images/logo.svg" alt="" width="20px" /><a
+                  href=""
+                  >相關(米果)產品</a
+                >
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="mt-4 mb-4">
+                <img src="./assets/images/logo.svg" alt="" width="20px" /><a
+                  href=""
+                  >相關(米果)產品</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="d-flex justify-content-center">
+            <img src="./assets/images/logo.svg" alt="" width="60%" />
+          </div>
+          <div class="d-flex justify-content-around m-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-heart"></i>
+              <p class="m-0 ml-3">156</p>
+            </div>
+            <div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-heart"></i>
+                <p class="m-0 ml-3">156</p>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-heart"></i>
+                <p class="m-0 ml-3">SAVE</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around m-4 pb-2 bb">購物車</div>
+          <div class="d-flex justify-content-around m-4 pb-5 bb">
+            豆白豆 <span>黃豆土豆好好好吃</span>
+          </div>
+          <div class="d-flex justify-content-around m-4 pb-3">
+            <div>原價</div>
+            <div>1620</div>
+            <div>NT(含稅)</div>
+          </div>
+          <div class="d-flex justify-content-around m-4">
+            <input type="number" value="1" />一版
+          </div>
+          <div class="d-flex justify-content-around m-4">
+            <div><i class="fas fa-minus-circle"></i></div>
+            <div class="num tc" contenteditable="true">1</div>
+            <div><i class="fas fa-plus-circle"></i></div>
+            二版
+          </div>
+          <div class="d-flex justify-content-around m-3">
+            <a class="btn1" href=""
+              >加入購物車 <i class="fas fa-shopping-cart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="sec-comment row">
+        <div class="col-2 mt-n5">
+          <img
+            src="./assets/images/circleee.svg"
+            alt=""
+            width="100px"
+            class=""
+          />
+          <p class="upupup">評論</p>
+        </div>
+        <div class="col-10 mt-3">
+          <div class="row">
+            <div class="col-2">
+              <div class="imgborder">
+                <img src="./assets/images/7.jpg" alt="" />
+              </div>
+              <div class="d-flex justify-content-around my-2">可大師12</div>
+            </div>
+            <div class="col-10">
+              <div class="row">
+                <div class="col-1 bt bl w1"></div>
+                <div class="col-10">
+                  留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿
+                  留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿
+                  留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊
+                  留言啊啊啊阿留言啊啊啊阿留言啊啊啊阿留言啊啊啊
+                </div>
+                <div
+                  class="col-1 bb d-flex align-items-end justify-content-end p-0"
+                >
+                  <div class="w1 br"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end my-5">
+            <div class="mx-4">
+              <img src="./assets/images/gj-1.svg" alt="" width="30px" />
+            </div>
+            <div class="mx-4">
+              <img src="./assets/images/bj.svg" alt="" width="30px" />
+            </div>
+            <div class="ml-3">2018-09-09</div>
+          </div>
+          <div class="d-flex justify-content-center m-5">
+            <a class="btn2" href="">載入更多</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      // const aa = document.querySelector(window).width();
+
+      // console.log(aa);
+
+      window.addEventListener('resize', handleScroll);
+      const handleScroll = () => {
+        console.log('cc');
+      };
+    </script>
+  </body>
+</html>

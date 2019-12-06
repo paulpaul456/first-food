@@ -1,0 +1,98 @@
+.card_post{
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    color: #6C757E;
+    border: 1px solid #e2e2e2; 
+    margin-top: 20px;
+}
+.text_post{
+    font-size: 30px;
+    margin: 15px;
+}
+.post_type{
+    margin: 15px;
+    border-radius: 4px;
+
+}
+.post_class{
+    margin: 20px;
+    border-radius: 4px;
+
+}
+.title_post{
+    width: 50%;
+    margin: 15px;
+}
+
+.reviewImg{
+    max-height: 300px;
+    max-width: 350px;
+}
+.article{
+    margin: 15px;
+    /* height: 800px; */
+    /* width: 800px; */
+    border-radius: 4px;
+}
+.ck-content {
+    min-height: 400px
+}
+
+.popup-content{
+    min-height: 400px
+}
+
+.time-bro{
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(110, 110, 110);
+    border: 1px solid #6C757E; 
+    line-height:25px;
+    /* letter-spacing: 2px; */
+    text-align:center;
+}
+.time-post{
+    /* margin: 10px; */
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(110, 110, 110);
+    border: 1px solid #6C757E; 
+    line-height:25px;
+    /* letter-spacing: 2px; */
+    text-align:center;
+}
+
+.cke_bottom.cke_reset_all {
+    display: none;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+    .btn-type-post{
+        margin: 0px 0 0 0;
+    }
+    .text_post{
+        font-size: 30px;
+        margin: 10px;
+    }
+    .post_type{
+        margin: 5px;
+    }
+    .title_post{
+        margin: 5px 5px 5px 5px;     
+    }
+    .post_class{
+        margin: 5px;
+    }
+    .article{
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .reviewImg{
+        height: 200px;
+        margin: 10px 0 0 0;
+    }
+  }
+
+  

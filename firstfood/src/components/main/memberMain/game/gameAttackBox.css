@@ -1,0 +1,155 @@
+.gameApp {
+    background: #ffd9ec;
+}
+
+.gameAttackBox {
+  width: 300px;
+  background: #ffd9ec;
+  font-size: 24px;
+}
+
+.attackOptionFront {
+  /* display: none; */
+}
+
+.attackOptionFront > span {
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.attackOption {
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+
+.attackOption:hover {
+  background: white;
+}
+
+.attackOption .attackMp {
+  position: absolute;
+  right: 0;
+  top: -38px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  background: #000;
+  padding: 5px;
+}
+
+.attackOption .attackMpDetail {
+  /* font-weight: normal; */
+  /* font-size: 12px; */
+}
+
+.attackOptionDetail .dotBox {
+  display: flex;
+  justify-content: center;
+}
+
+.attackOptionDetail .detailPageDot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.attackOptionDetail .dotActive {
+  background: #000;
+}
+
+.attackOptionDetail .pageChange {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.attackOptionDetail .backToFront {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.attackOptionDetail .nextPage {
+  /* width: 80px; */
+  display: flex;
+}
+
+.attackOptionDetail .nextPageOne {
+  width: 60px;
+  border: 3px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.attackOptionDetail .nextPageTwo {
+  width: 60px;
+  border: 3px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.attackOptionDetail .backToFront:hover,
+.nextPageOne:hover,
+.nextPageTwo:hover {
+  background: white;
+  cursor: pointer;
+}
+
+/* 以下是gameNavBar */
+.gameNavBar {
+    display: flex;
+}
+
+.gameNavBar .gameUser {
+  border: 2px solid #000;
+  display: flex;
+  width: 50%;
+  margin: 10px;
+  background: rgb(224,224,224);
+}
+
+.gameNavBar .gameUserT_H {
+    margin-left: 20px;
+}
+
+.gameNavBar .gameUserTitle {
+  display: flex;
+}
+
+.gameNavBar .gameUserName {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gameNavBar .gameUserHealth {
+  width: 200px;
+  height: 10px;
+  background: #00db00;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin: 5px 0;
+}
+
+.gameNavBar .gameOpponent {
+  border: 2px solid #000;
+  display: flex;
+  width: 50%;
+  margin: 10px;
+  background: rgb(224,224,224);
+}
+
+.gameNavBar .gameOpponentT_H {
+    margin-left: 20px;
+}

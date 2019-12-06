@@ -1,0 +1,23 @@
+#root {
+  overflow: hidden;
+}
+.home_video {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: hidden;
+    video {
+      width: 120% !important;
+      height: 100vh !important;
+    }
+  }
+}

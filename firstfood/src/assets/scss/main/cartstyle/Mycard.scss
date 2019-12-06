@@ -1,0 +1,102 @@
+.mycard {
+    background: url(../images/mycartimages/background.png);
+    width: 100%;
+    min-height: 1200px;
+    background-size: contain;
+    .cardpay-head-svg{
+      width: 100%;
+      min-height: 50px;
+      margin-top: 100px;
+  }
+  .cardpay-head-p1{
+      font-weight: bold;
+      color: #AC1515;
+      margin: 30px 0 30px 20px;
+      font-size: 25px;
+  
+  }
+  .cardpay-head-p2{
+      font-weight: bold;
+      margin: 0 0 30px 20px;
+  }
+  /*以上為HEAD*/
+  .cardpay-body{
+    width: 100%;
+    background: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    min-height: 600px;
+    padding: 70px 0 0 50px;
+  }
+  .cardpay-body-p{
+    font-weight: bold;
+  }
+  .cardpay-body-cardnum{
+    margin: 15px 0 7px 0;
+  }
+  .cardpay-body-cardnum input{
+    max-width: 70px;
+  }
+  .cardpay-body-3num input{
+    max-width: 70px;
+  }
+  .cardpay-body-3num p{
+    color: #707070;
+    display: inline;
+  }
+  .card-img{
+    text-align: center;
+    margin: 0 0 0 50px;
+    
+  }
+  /*以上為BODY*/
+  .cardpay-bottom{
+      margin-top: 100px;
+  }
+         
+  .cardpay-next-or-prev{
+      margin-top: 50px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+  }
+  .prev{
+      background:#AC1515 ;
+      color: white;
+     width: 140px;
+     min-height: 40px;
+     text-align: center;
+     line-height: 50px;
+     font-weight: bold;
+     margin-right: 80px;
+     cursor: pointer;
+  }
+  .next{
+      background:#0089A7 ;
+      color: white;
+     width: 140px;
+     min-height: 40px;
+     text-align: center;
+     line-height: 50px;
+     font-weight: bold;
+   
+     cursor: pointer;
+  }
+  .card-rwd-2{
+    display: none;
+  }
+
+
+  @media screen and (max-width:480px) { 
+   .card-rwd-1{
+     display: none;
+   }
+   .card-rwd-2{
+     display: block;
+   }
+   .card-rwd-2 input{
+     width: 50px;
+     margin:  10px;
+   }
+ }   
+  
+}

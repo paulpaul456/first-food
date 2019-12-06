@@ -1,0 +1,106 @@
+//example
+export const ADD_TODO = 'ADD_TODO'
+export const DEL_TODO = 'DEL_TODO'
+export const LOAD_TODO = 'LOAD_TODO'
+// ◆ 動作_對象 (動詞_名詞) ADD_TODO , DELETE_TODO , UPDATE_TODO
+// ◆ 功能/區域_動作_對象 (名詞_動詞_名詞) CART_ADD_ITEM , CART_DELETE_ITEM , PRODUCT_ADD_ITEM
+// ◆ 動作_名詞_狀態 (動詞_名詞_形容詞/動詞) FETCH_USER_REQUEST , FETCH_USER_SUCCESS , FETCH_USER_FAIL , FETCH_USER_COMPLETE
+
+//  farmerproduct - action
+export const LOAD_PRODUCT = 'LOAD_PRODUCT'
+
+//member - action
+export const GET_SINGLE_MEMBER_DATA = 'GET_SINGLE_MEMBER_DATA'
+export const CHECK_LOGIN = 'CHECK_LOGIN'
+export const IS_LOGIN = 'IS_LOGIN'
+export const SHOW_ERROR = 'SHOW_ERROR'
+export const MEMBER_REGISTER = 'MEMBER_REGISTER'
+export const MEMBER_LOGOUT = 'MEMBER_LOGOUT'
+export const CLOSE_ERROR = 'CLOSE_ERROR'
+export const SHOW_LOGIN_BOX = 'SHOW_LOGIN_BOX'
+export const CLOSE_LOGIN_BOX = 'CLOSE_LOGIN_BOX'
+export const INITIAL_MEMBER_CHECK = 'INITIAL_MEMBER_CHECK'
+export const UPDATE_MEMBER_DATA = 'UPDATE_MEMBER_DATA'
+export const CHANGE_MEMBER_TEXT = 'CHANGE_MEMBER_TEXT'
+export const RE_CHANGE_PASSWORD = 'RE_CHANGE_PASSWORD'
+
+// export const SAVE_INPUT_VALUE = 'SAVE_INPUT_VALUE'
+
+// restaurant-action
+export const SET_CENTER = 'SET_CENTER'
+export const SET_DISTANCE = 'SET_DISTANCE'
+
+export const HANDLE_MAP_DISPLAY = 'HANDLE_MAP_DISPLAY'
+
+export const LOAD_RESTAURANT = 'LOAD_RESTAURANT'
+export const HANDLE_MAP_SEARCH = 'HANDLE_MAP_SEARCH'
+
+export const LOAD_OPEN_RESTAURANT = 'LOAD_OPEN_RESTAURANT'
+export const LOAD_COOK_RESTAURANT = 'LOAD_COOK_RESTAURANT'
+export const LOAD_SINGLE_RESTAURANT = 'LOAD_SINGLE_RESTAURANT'
+export const LOAD_SINGLE_DINNER = 'LOAD_SINGLE_DINNER'
+export const TEST = 'TEST'
+
+export const LOAD_DINNER = 'LOAD_DINNER'
+export const LOAD_MAIN_DINNER = 'LOAD_MAIN_DINNER'
+
+export const HANDLE_CLICK_PRODUCT_CLASS = 'HANDLE_CLICK_PRODUCT_CLASS'
+export const HANDLE_CLICK_FARMER_PRODUCT = 'HANDLE_CLICK_FARMER_PRODUCT'
+export const HANDLE_CLICK_SPECIAL = 'HANDLE_CLICK_SPECIAL'
+export const HANDLE_CLICK_SPICY = 'HANDLE_CLICK_SPICY'
+
+export const ADD_DN_CART = 'ADD_DN_CART'
+export const READ_DN_CART = 'READ_DN_CART'
+export const HANDLE_CHECK_DN = 'HANDLE_CHECK_DN'
+export const DEL_DN_CART = 'DEL_DN_CART'
+export const ADD_LOVE_DN_CART = 'ADD_LOVE_DN_CART'
+export const PREV_PATH = 'PREV_PATH'
+
+export const ADD_RES_COMMENT = 'ADD_RES_COMMENT'
+export const CLICK_RES_COMMENT = 'CLICK_RES_COMMENT'
+export const READ_RES_COMMENT = 'READ_RES_COMMENT'
+export const ADD_DN_COMMENT = 'ADD_DN_COMMENT'
+export const READ_DN_COMMENT = 'READ_DN_COMMENT'
+export const READ_MORE_COMMENT = 'READ_MORE_COMMENT'
+
+// forum - action
+export const LOAD_FORUM = 'LOAD_FORUM'
+export const LOAD_FORUM_CATS_NEWER = 'LOAD_FORUM_CATS_NEWER'
+export const LOAD_ARTICLES_BY_CLASS = 'LOAD_ARTICLES_BY_CLASS'
+export const LOAD_FORUM_CLASS = 'LOAD_FORUM_CLASS'
+export const LOAD_ARTICLE_BY_ID = 'LOAD_ARTICLE_BY_ID'
+export const GET_FORUM = 'GET_FORUM'
+export const GET_COLLECTION = 'GET_COLLECTION'
+export const GET_GOOD = 'GET_GOOD'
+export const GET_MESSAGE_COUNT = 'GET_MESSAGE_COUNT'
+export const GET_ADDFORUM_BROWSE = 'GET_ADDFORUM_BROWSE'
+export const LOAD_MSG_BY_ID = 'LOAD_MSG_BY_ID'
+export const ADD_COLLECTION_CNT = 'ADD_COLLECTION_CNT'
+export const INSERT_MESSAGE = 'INSERT_MESSAGE'
+export const INSERT_ARTICLE = 'INSERT_ARTICLE'
+export const UPLOAD_ARTICLE_IMG = 'UPLOAD_ARTICLE_IMG'
+
+// courses - action
+export * from './ui/uiActionType'
+export * from './course/coursesActionType'
+export * from './collection/collectionActionType'
+
+// goods
+export const ADD_LOVE = 'ADD_LOVE'
+export const ADD_CART = 'ADD_CART'
+export const LOAD_PRODUCTBYCUS = 'LOAD_PRODUCTBYCUS'
+export const REMOVE_LOVE = 'REMOVE_LOVE'
+export const REMOVE_FMCART = 'REMOVE_FMCART'
+export const LOAD_COMMENTBYID = 'LOAD_COMMENTBYID'
+export const LOAD_FM_COM_BYID ="LOAD_FM_COM_BYID"
+export const LOAD_ALL_FMGOODS ="LOAD_ALL_FMGOODS"
+export const ALL_SELECT_BYMONEYFM ="ALL_SELECT_BYMONEYFM"
+export const LOAD_FARIDPRODUCT ="LOAD_FARIDPRODUCT"
+// orders
+export const LOAD_ORDERMEM ="LOAD_ORDERMEM"
+// 小鈴鐺
+export const LOAD_CID_CART_NUM ="LOAD_CID_CART_NUM"
+// HOT商品小農
+export const LOAD_HOTTFAPRODUCT="LOAD_HOTTFAPRODUCT"
+// 小農相關推薦商品
+export const LOAD_FM_CLASS_RECOMMEND="LOAD_FM_CLASS_RECOMMEND"

@@ -1,0 +1,191 @@
+.lastcheck {
+    background: url(../images/mycartimages/background.png);
+    width: 100%;
+    min-height: 1200px;
+    background-size: contain;
+    .last-check-head-svg{
+        width: 100%;
+        min-height: 50px;
+        margin-top: 100px;
+    }
+    .last-check-head-p1{
+        font-weight: bold;
+        color: #AC1515;
+        margin: 30px 0 30px 20px;
+        font-size: 25px;
+    
+    }
+    .last-check-head-p2{
+        font-weight: bold;
+        margin: 0 0 30px 20px;
+    }
+    /*以上為HEAD*/
+    .last-check-body-detail{
+        border: 1px solid #707070;
+        background: white;
+        width: 100%;
+    }
+    .last-check-body-detail-redp{
+        color: #AC1515;
+        font-weight: bold;
+        margin-left: 20px;
+        width: 100%;
+        min-height: 40px;
+    }
+    .last-check-body-detail-svg{
+        width: 100%;
+    }
+    .last-check-body-detail-list{
+        border-bottom: 1px solid #707070;
+    }
+    .last-check-body-detail-list-left{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        font-weight: bold;
+    }
+    .last-check-body-detail-list-left-1{
+        margin: 0 50px 0 170px;
+        
+    }
+    .last-check-body-detail-list-right{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        line-height: 70px;
+        font-weight: bold;
+    }
+    .last-check-body-detail-total-top{
+        background: #707070;
+        color: white;
+        font-weight: bold;         
+        text-align: right;
+        width: 100%;
+        min-height: 100px;
+        line-height: 50px;
+    
+        }
+    .last-check-body-detail-total-top-p{
+        display: inline;
+        color: #ffb11b;
+    }
+    .last-check-body-detail-total-top-div{
+       letter-spacing:2px;
+       margin: 0px 50px 0px 0;
+    }
+    .last-check-body-detail-total-bottom{
+       background: #c73e3a;
+       width: 100%;
+       min-height: 50px;
+       color: white;
+       font-weight: bold;
+       text-align: right;
+       padding: 15px 50px 0 0;
+    }
+    .whitediv{
+       background: white;
+       width: 100%;
+       min-height: 40px;
+    }
+    /*以上為購物細節*/
+    .last-check-imf{
+        margin: 100px 0 0 0;
+        border: 1px solid #707070;
+        background: white;
+        width: 100%;
+    
+    }
+    .text-red{
+       color: #AC1515;
+       font-weight: bold;
+       margin-top: 10px;
+    }
+    .last-check-imf-left{
+       font-weight: bold;
+    }
+    .last-check-imf-right-rwd{
+        display: none;
+    }
+    /*以上為購物寄送資訊*/
+    .last-check-bottom{
+        margin-top: 100px;
+    }
+    .last-check-next-or-prev{
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .prev{
+        background:#AC1515 ;
+        color: white;
+       width: 140px;
+       min-height: 40px;
+       text-align: center;
+       line-height: 50px;
+       font-weight: bold;
+       margin-right: 80px;
+       cursor: pointer;
+    }
+    .next{
+        background:#0089A7 ;
+        color: white;
+       width: 140px;
+       min-height: 40px;
+       text-align: center;
+       line-height: 50px;
+       font-weight: bold;
+     
+       cursor: pointer;
+    }
+    @media screen and (max-width:480px) { 
+        .last-check-body-detail-list-left-1{
+            margin-left: 40px;
+            display: inline;
+            font-size: 12px;
+        }
+        .last-check-body-detail-list-right{
+            display: flex;
+            justify-content: space-between;
+            width: 150px;                                        
+            
+            font-weight: bold;
+
+        }
+        .last-check-body-detail-list-left{
+           width: 200px;
+        }
+        .last-check-rwd-p1{
+           margin-left: 0px;
+        }
+        .last-check-rwd-p2{
+            margin-right: -10px;
+         }
+         .last-check-body-detail-total-top{
+            background: #707070;
+            color: white;
+            font-weight: bold;         
+            text-align: right;
+            width: 100%;
+            min-height: 0px;
+            
+         }
+         .last-check-imf-right{
+             display: none;
+         }
+         .last-check-imf-left{
+             display: flex;
+             justify-content: space-between;
+         }
+         .last-check-imf-right-rwd{
+            display: block;
+        }
+        .last-check-body-detail-svg{
+            width: 100%;
+            font-size: 15px;
+        }
+    }   
+}
+

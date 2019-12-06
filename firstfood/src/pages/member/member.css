@@ -1,0 +1,166 @@
+/* MemberDetailPage */
+.main {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 30px 30px 10px 30px;
+}
+
+.main .detailFigure {
+    width: '250px';
+}
+
+/* .detailFigure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.detailBox {
+    border-top: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.detailBox input {
+    min-width: 100px;
+    border: none;
+}
+
+.detailBox textarea {
+    min-width: 250px;
+    border: none;
+}
+
+.detailBox_title {
+    margin: 0;
+     font-weight: 700;
+}
+
+
+/* MemberPasswordPage */
+.editPassword_background {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow:4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.editPassword {
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.justALine {
+    border-bottom: 1px solid #959595;
+    margin: 20px 0;
+}
+
+.passwordBtn {
+    font-size: 12px; 
+    border: 1px solid #959595; 
+    border-radius: 0; 
+    width: 100px; 
+    display: block;
+    margin: 10px auto;
+    color: red;
+    font-weight: bold;
+}
+
+.notice>h3 {
+    font-weight: 700; 
+    padding: 10px; 
+    border-bottom: 2px solid #333;
+}
+
+.notice>div {
+    padding-left: 30px;
+}
+
+.notice ul {
+    list-style:disc;
+}
+
+.notice li {
+    margin: 5px 0;
+}
+
+/* MemberAddressPage */
+.addressList_background {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow:4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.addressList {
+    border-bottom: 1px solid #959595;
+    background: white;
+    padding: 10px;
+    box-shadow:4px 4px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.addressList h4 {
+    font-weight:700;
+    margin: 20px;
+}
+
+.addressList table a {
+    margin: 0 5px;
+}
+
+.addressList table tbody input {
+    border: none;
+}
+
+.addressBtnDiv {
+    text-align: end;
+}
+
+.addressBtnDiv span {
+    border: 1px solid #959595; 
+    padding: 5px 20px; 
+    display: inline-block;
+    margin: 20px 10px;
+    /* color: red; */
+    cursor: pointer;
+}
+
+.addressBtnDiv span a {
+    color: red;
+}
+
+.addressNotice {
+    margin-left: 20px;
+    margin-top: 50px;
+    color: #333;
+}
+
+@media screen and (max-width: 992px){
+    .editPassword .form-group .row .passInput {
+        display: flex;
+        justify-content: center;
+    }
+    .editPassword input {
+        width: 700px;
+    }
+    .editPassword .small {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+    .editPassword label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .detailCol {
+        margin: 20px 0;
+    }
+
+    .main {
+        padding: 0;
+    }
+}

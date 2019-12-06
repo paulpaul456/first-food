@@ -1,0 +1,197 @@
+// mobilefootbar手機板foot和head  768出現
+@media (min-width: $m-pad) {
+  .mobileHeaderBar {
+    width: 100vw;
+    max-height: 0px;
+    overflow: scroll;
+    transition: .2s;
+    background: $c-lighter;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    left: 0px;
+  }
+
+}
+
+// Main
+@media (min-width: $m-phones) and (max-width: $m-pad) {
+  .footbar {
+    width: 100vw;
+    height: 70px;
+    background: $c-grey;
+    position: fixed;
+    z-index: 20;
+    bottom: 0px;
+    left: 0px;
+  }
+  .btn {
+    color: $c-light;
+  }
+  .reddot {
+    position: absolute;
+    border-radius: 50%;
+    background: $c-danger;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 5px;
+    color: white;
+    font-weight: 500;
+    
+  }
+  .num {
+    font-weight: 800;
+    // position: absolute;
+    // top: -50px;
+    // right: -50px;
+    text-align: center;
+  }
+  .mobileHeaderBar {
+    width: 100vw;
+    height: 70px;
+    background: $c-lighter;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    left: 0px;
+
+    .mobileSearch {
+      margin-left: 20px;
+    }
+
+    .mobileHamburger {
+      cursor: pointer;
+      width: 100px;
+      height: 45px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      &.active {
+        .hamburgerBox {
+          border: none;
+
+          .headBox {
+            border: none;
+          }
+
+          .hamburgerLine {
+            margin-left: 70px;
+
+            &.firstLine {
+              transform: translateY(11px) rotate(45deg);
+            }
+
+            &.secondLine {
+              background-color: transparent;
+            }
+
+            &.thirdLine {
+              transform: translateY(-11px) rotate(-45deg);
+            }
+          }
+
+        }
+
+      }
+
+      .hamburgerBox {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid $c-grey;
+        border-left: 1px solid $c-grey;
+
+        .headBox {
+          height: 10px;
+          border-right: 1px solid $c-grey;
+          margin-bottom: 3px;
+        }
+
+        .hamburgerLine {
+          margin-left: 27.5px;
+          margin-bottom: 10px;
+          width: 45px;
+          height: 1px;
+          background-color: $c-grey;
+          transition: .5s;
+        }
+      }
+
+    }
+  }
+  .mobileNavsBox {
+    transform: translateX(-120vw);
+    width: 100vw;
+    height: calc(100vh - 140px);
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    background: rgba(197, 197, 197, 0.52);
+    z-index: 1000;
+    transition: 0.5s;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  .mobileNavs {
+    transform: translateX(-100vw);
+    width: 90vw;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    transition: 0.5s;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    .navbarItem {
+      height: 100px;
+      transition: .5s;
+
+      &:hover {
+        h4 {
+          color: black;
+        }
+
+        background: #f0eeeb;
+      }
+
+      h4 {
+        line-height: 100px;
+      }
+
+    }
+
+    .navsLine {
+      height: 1px;
+      //background: $c-grey;
+      border: 1px dashed $c-lightGrey;
+    }
+  }
+}
+
+@media (max-width: $m-phones) {
+  .mobileHeaderBar {
+
+    .mobileSearch {
+      margin-left: 20px;
+    }
+
+    .mobileHamburger {
+      width: 80px;
+
+      .hamburgerBox {
+        .hamburgerLine {
+          margin-left: 22.5px;
+          margin-bottom: 10px;
+          width: 35px;
+        }
+      }
+    }
+  }
+}

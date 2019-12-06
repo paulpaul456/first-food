@@ -1,0 +1,79 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+html {
+  scroll-behavior: smooth;
+  //background: $c-background;
+  //color: $c-base;
+  //font-family: $b-fontFamily;
+  //font-size: $b-fontSize;
+  //line-height: $b-lineHeight;
+}
+*{
+  // border: 1px solid red;
+}
+body {
+  font-size: 100%;
+  
+}
+
+a {
+  color: $c-dark;
+  transition: .3s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.5;
+    color: $c-dark;
+  }
+}
+
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p {
+  //margin-bottom: $b-space;
+  //margin-top: 0;
+}
+
+
+li {
+  //margin-bottom: $b-space-s;
+  //margin-top: 0;
+}
+
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  //font-family: $b-fontFamily-heading;
+  //font-weight: bold;
+  //line-height: 1.2;
+  //margin-bottom: $b-space-xs;
+  //margin-top: 0;
+}
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a {
+  //border-bottom: $b-border;
+  //color: $c-highlight;
+  //text-decoration: none;
+  &:hover, &:focus {
+    //border-bottom-color: $c-highlight;
+    //color: $c-subdue;
+  }
+}
+
+
+

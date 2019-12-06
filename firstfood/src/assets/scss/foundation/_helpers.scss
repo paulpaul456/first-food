@@ -1,0 +1,130 @@
+// ----- Extend Name ----- //
+
+
+// ----- Function Name ----- //
+
+
+// ----- Mixin Name ----- //
+@mixin css3($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin label($text: 'Code', $background: $yellow, $color: rgba(black, 0.5)) {
+  position: relative;
+  &:before {
+    background: $background;
+    color: $color;
+    content: $text;
+    display: inline-block;
+    font-size: 0.6rem;
+  }
+}
+
+@mixin transition($style:all, $time:1s) {
+  transition: $style $time ease-in-out;
+  -webkit-transition: $style $time ease-in-out;
+}
+// 1. 排版
+
+
+// 水平垂直置中-translate
+@mixin center($left:50%,$top:50%) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+// 水平垂直置-flex
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//水平垂直置-margin
+@mixin margin-center($w, $h) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -($w/2);
+  margin-top: -($h/2);
+}
+
+// 置頂nav
+@mixin fix-header($h: 70px) {
+  @include fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $h;
+  z-index: 1000;
+}
+
+// 置底nav
+@mixin fix-footer($h: 70px) {
+  @include fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $h;
+  z-index: 1000;
+}
+
+
+// 尺寸
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+//圖片大小適中
+@mixin fullImg($w:100%,$h:100%,$o:cover){
+  width: $w;
+  height: $h;
+  object-fit: $o;
+}
+// 全視窗背景圖
+@mixin fullscreen-bg($url) {
+  width: 100vw;
+  height: 100vh;
+  background: url($url) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+// 邊框
+//keyframes
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+//animation
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+
+//   Tool Section Name

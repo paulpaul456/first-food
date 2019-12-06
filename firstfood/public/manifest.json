@@ -1,0 +1,20 @@
+{
+  "short_name": "First Food",
+  "name": "First Food Website",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "394x394"
+    },
+    {
+      "src": "logo@2x.png",
+      "type": "image/png",
+      "sizes": "787x787"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

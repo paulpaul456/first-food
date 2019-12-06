@@ -1,0 +1,683 @@
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Base ----- //
+$c-primary: #133072;
+$c-secondary: #6a8372;
+$c-dark: #1a1a1a;
+$c-grey: #707070;
+$c-lightGrey: #c5c5c5;
+$c-light: #f7f4ef;
+$c-lighter: #faf8f5;
+$c-success: #0089a7;
+$c-info: #2ea9df;
+$c-warning: #ffb11b;
+$c-danger: #c73e3a;
+$c-bg2: #d6b9b9;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Section Margin Top ----- //
+$b-MT: 100px;
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px;
+$b-borderStyle: solid;
+$b-borderWidth: 2px;
+$b-border: $b-borderWidth $b-borderStyle $c-grey;
+$b-boxShadow: 0 2px 0 rgba($c-dark, 0.25);
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: 'OpenSans', sans-serif;
+$b-fontFamily: 'OpenSans', sans-serif;
+$b-fontSize: 16px;
+$b-fontSize-s: 75%;
+$b-fontSize-m: 90%;
+$b-fontSize-l: 115%;
+$b-lineHeight: 1.5;
+
+// ----- Sizing ----- //
+
+$b-space: (20px);
+$b-space-s: 0.5 * $b-space;
+$b-space-l: 2 * $b-space;
+$b-space-xl: 4 * $b-space;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+$g-s: 'em(480px)';
+$g-m: 'em(800px)';
+$g-l: 'em(1024px)';
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ----- Dropdown ----- //
+
+// example：$dropdown-width: em(200px)
+
+//media size
+$m-pc: 1200px;
+$m-pcs: 992px;
+$m-pad: 768px;
+$m-phone: 576px;
+$m-phones: 375px;
+
+//font
+$t-title-font: normal 24px/1.5 'Open Sans', sans-serif;
+
+// border系列
+// $borWid: 1px;
+// $borSty: solid;
+// $borCol: black;
+
+// @mixin bortop($borWid: 1px, $borSty: solid, $borCol: black) {
+//     border: $borWid $borSty $borCol;
+// }
+
+
+// card會員test
+@media (min-width: $m-phones) {
+  .order {
+    .card {
+      background-position-y: 3px;
+      background-position-x: 20px;
+      width: 80vw;
+      height: 110px;
+      position: relative;
+    }
+    .cardText {
+      font-weight: 800;
+      color: $c-danger;
+      font-size: 25px;
+      position: absolute;
+      right: 25%;
+      top: 50%;
+      transform: translateX(50%) translateY(-50%);
+    }
+  }
+}
+@media (min-width: $m-phone) {
+  .order {
+    .card {
+      background-position-y: 3px;
+      background-position-x: 20px;
+      width: 80vw;
+      height: 110px;
+      position: relative;
+    }
+    .cardText {
+      font-weight: 800;
+      color: $c-danger;
+      font-size: 25px;
+      position: absolute;
+      right: 25%;
+      top: 50%;
+      transform: translateX(50%) translateY(-50%);
+    }
+  }
+}
+@media (min-width: $m-pad) {
+  .order {
+    .card {
+      background-position-y: 3px;
+      width: 300px;
+      height: 110px;
+      position: relative;
+    }
+    .cardText {
+      font-weight: 800;
+      color: $c-danger;
+      font-size: 25px;
+      position: absolute;
+      right: 25%;
+      top: 50%;
+      transform: translateX(50%) translateY(-50%);
+    }
+  }
+}
+// 會員logobtn
+@media (min-width: $m-phones) {
+  .logobutton {
+    .btn {
+    }
+    .btnsvg {
+      width: 100px;
+    }
+    .btntext {
+      color: $c-danger;
+      font-weight: 700;
+      top: -50%;
+      transform: translateY(-50%);
+    }
+    .sm-x {
+      display: none;
+    }
+  }
+}
+@media (min-width: $m-phone) {
+  .logobutton {
+    .btn {
+    }
+    .btnsvg {
+      width: 100px;
+    }
+    .btntext {
+      color: $c-danger;
+      font-weight: 700;
+      top: -50%;
+      transform: translateY(-50%);
+    }
+    .sm-x {
+      display: none;
+    }
+  }
+}
+@media (min-width: $m-pad) {
+  .logobutton {
+    .btn {
+    }
+    .btnsvg {
+      width: 100px;
+    }
+    .btntext {
+      color: $c-danger;
+      font-weight: 700;
+      top: -50%;
+      transform: translateY(-50%);
+    }
+    .sm-x {
+      display: block;
+    }
+  }
+}
+
+// 商品細節
+.backimg{
+ .goodsbg001 {
+  top: 540px;
+  width: 100%;
+  @include fullImg(100%, 550px);
+  z-index: -10;
+}
+ .goodsbg002 {
+  top: 1090px;
+  @include fullImg(100%, 1600px);
+  z-index: -11;
+}
+ .goodscardbg001 {
+  top: 500px;
+  width: 100%;
+  @include fullImg(100%, 700px);
+  z-index: -10;
+}
+ .goodscardbg002 {
+  top: 1200px;
+  @include fullImg(100%, 2500px);
+  z-index: -11;
+}
+ .bg003 {
+  top: 600px;
+  @include fullImg(100%, 550px);
+  z-index: -11;
+}
+.bg004 {
+  top: 600px;
+  @include fullImg(100%, 500px);
+  z-index: -11;
+}
+.bg005 {
+  top: 600px;
+  @include fullImg(100%, 550px);
+  z-index: -11;
+}
+.bg006 {
+  top: 1100px;
+  @include fullImg(100%, 500px);
+  z-index: -11;
+}
+.bg008 {
+  top: 600px;
+  @include fullImg(100%, 500px);
+  z-index: -11;
+}
+.bg009 {
+  top: 1100px;
+  @include fullImg(100%, 880px);
+  z-index: -11;
+}
+.bg101 {
+  top: 520px;
+  @include fullImg(100%, 430px);
+  z-index: -11;
+}
+//  .bg004 {
+//   top: 1060px;
+//   @include fullImg(100%, 1700px);
+//   z-index: -11;
+// }
+}
+
+.bbggdd{
+  top: 500px;
+  z-index: -15;
+  width: 100%;
+  height: 1000vh;
+}
+
+// 雜
+.hohohoduck{
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px rgba($c-dark, 0.25);
+  overflow: hidden;
+  .picture{
+    width: 100%;
+    // object-fit: cover;
+    // object-position: center;
+    transition: 0.3s;
+  }
+}
+.hohohoduck:hover{
+ transform:translateY(-10px);
+ .picture{
+}
+}
+.ggwppppp{
+  transition: 0.1s;
+}
+.ggwppppp:hover{
+  background-color: #555;
+  color: #fff;
+}
+.btbtbtn{
+  background-color: $c-info;
+}
+.clickmeplzss{
+  transition: 0.3s;
+}
+.clickmeplzaa{
+  transition: 0.3s;
+}
+.clickmeplzaa:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.clickmeplzss:hover{
+opacity: 0.8;
+transform:translateY(-10%) scale(1.3);
+cursor: pointer;
+}
+.clickmeplz:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.tt11qq{
+  width: 100px;
+  height: 150px;
+}
+
+
+
+//animation
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+.akajs{
+  width: 150px;
+  height: 150px;
+  background-color: #2ea9df;
+  -webkit-animation-name: flash; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: flash;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite
+}
+
+
+// test card
+@media (min-width: $m-phones) {
+  .tryrow{
+    width: 100%;
+   .cardmain{
+      width: 22rem;
+    }
+  }
+}
+@media (min-width: $m-phone) {
+  .tryrow{
+    width: 100%;
+   .cardmain{
+      width: 18rem;
+    }
+  } 
+}
+@media (min-width: $m-pad) {
+  .tryrow{
+    width: 100%;
+   .cardmain{
+      width: 14rem;
+    }
+  } 
+}
+
+// 首頁
+
+@media (min-width: $m-phones) {
+  .txtdanger{
+    color: $c-danger;
+  }
+  .txtw800{
+    font-weight: 800;
+  }
+  .txts16{
+    font-size: 16px;
+  }
+  .homepagproductslider{
+    .sm-oo{
+      display: block;
+    }
+    .sm-xx{
+      display: none;
+    }
+    .wcolwcol3{
+      width: 100%;
+      .topstone{
+        width: 100%;
+        height: 50px;
+      }
+    //   position: relative !important;
+    //  .picktextneedmove{
+    //     position: absolute !important; 
+    //     top: 0px !important;
+    //   }
+    }
+    .px15{
+      padding: 0 15px;
+      // position: relative;
+      .hotnum{
+        transform: rotate(-30deg);
+      }
+    }
+    .phoimgfm2{
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      object-fit: cover;
+      object-position: center;
+      margin: 0 auto;
+      // position: relative;
+    
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      p{
+        width: 300px;
+      }
+    }
+    .phoimgfm{
+    width: 15vw;
+    height: 15vw;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    // position: relative;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    p{
+      width: 15vw;
+    }
+  }
+  }
+  
+}
+@media (min-width: $m-phone) {
+  .homepagproductslider{
+    .wcolwcol3{
+      width: 100%;
+      .topstone{
+        width: 100%;
+        height: 50px;
+      }
+    //   position: relative !important;
+    //  .picktextneedmove{
+    //     position: absolute !important; 
+    //     top: 0px !important;
+    //   }
+    }
+    .px15{
+      padding: 0 15px;
+      // position: relative;
+      .hotnum{
+        transform: rotate(-30deg);
+        -webkit-animation-name: flash; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: flash;
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-iteration-count: 2
+      }
+    }
+    .phoimgfm{
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    // position: relative;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    p{
+      width: 130px;
+    }
+  }
+  }
+  
+}
+@media (min-width: $m-pad) {
+  .homepagproductslider{
+    .sm-oo{
+      display: none;
+    }
+    .sm-xx{
+      display: block;
+    }
+    // .crowntit{
+    //   position: relative;
+    //   -webkit-animation-name: flash; /* Safari 4.0 - 8.0 */
+    //   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    //   animation-name: flash;
+    //   animation-duration: 10s;
+    //   animation-direction: alternate;
+    //   animation-iteration-count: 2;
+    //   .topnum{
+    //   position: absolute;
+    //   color: #faf8f5;
+    //   font-size: 20px;
+    //   top: 15px;
+    //   left: 23px;
+    // }
+    // }
+    .wcolwcol3{
+      width: 100%;
+      .topstone{
+        width: 100%;
+        height: 50px;
+      }
+    //   position: relative !important;
+    //  .picktextneedmove{
+    //     position: absolute !important; 
+    //     top: 0px !important;
+    //   }
+    }
+    .px15{
+      padding: 0 15px;
+      // position: relative;
+      .hotnum{
+        transform: rotate(-30deg);
+        -webkit-animation-name: flash; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: flash;
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-iteration-count: 2
+      }
+    }
+    .phoimgfm{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    // position: relative;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    p{
+      width: 150px;
+    }
+  }
+  }
+  
+}
+@media (min-width: $m-pcs) {
+  .homepagproductslider{
+    .wcolwcol3{
+      width: 100%;
+      .topstone{
+        width: 100%;
+        height: 50px;
+      }
+    //   position: relative !important;
+    //  .picktextneedmove{
+    //     position: absolute !important; 
+    //     top: 0px !important;
+    //   }
+    }
+    .px15{
+      padding: 0 15px;
+      // position: relative;
+      .hotnum{
+        transform: rotate(-30deg);
+        -webkit-animation-name: flash; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: flash;
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-iteration-count: 2
+      }
+    }
+    .phoimgfm{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    // position: relative;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    p{
+      width: 200px;
+    }
+  }
+  }
+  
+}
+
+
+// 雜兒雜
+.iamaw700{
+  font-weight: 700;
+}
+.hoverhovermeme{
+  transition: 0.3s;
+}
+.hoverhovermeme:hover{
+  opacity: 0.7;
+  transform: translateY(-5px);
+}
+.iamalinebot{
+  width: 80vw;
+  height: 1px;
+  background: rgb(0, 0, 0);
+  margin: 50px auto;
+}
+.imgcenterboxfm img{
+  margin: 0 auto;
+}
+.wid200ya{
+  width: 200px;
+}
+// .bbbbbblockmakeup img{
+//   display: block;
+//   margin: 30px;
+// }
+.slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 40px !important;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.clickmeplzakabig{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.clickmeplzakabig:hover{
+  opacity: 0.8;
+}
+
+
+

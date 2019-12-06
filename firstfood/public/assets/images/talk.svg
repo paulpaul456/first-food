@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23"
+                viewBox="0 0 23 23">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect width="23" height="23" fill="none" />
+                  </clipPath>
+                </defs>
+                <g id="Symbol_96_15" data-name="Symbol 96 – 15" clip-path="url(#clip-path)">
+                  <path id="Chat"
+                    d="M7.136,11.417a1.348,1.348,0,0,0,1.427,1.427h5.708A1.43,1.43,0,0,0,15.7,11.417,1.348,1.348,0,0,0,14.271,9.99H8.563A1.43,1.43,0,0,0,7.136,11.417ZM0,7.136A7.066,7.066,0,0,1,7.136,0H15.7a7.066,7.066,0,0,1,7.136,7.136V21.407a1.348,1.348,0,0,1-1.427,1.427H7.136A7.066,7.066,0,0,1,0,15.7Z"
+                    fill-rule="evenodd" />
+                </g>
+              </svg>

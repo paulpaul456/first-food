@@ -1,0 +1,522 @@
+@import './config.scss';
+
+.map_wrap {
+  background: url('/assets/images/background.png') center center;
+  padding: 20px 20px;
+  font-family: 'Microsoft JhengHei';
+
+  #mapwrap {
+    display: flex;
+    height: 100vh;
+  }
+}
+
+.google_map {
+  // display: none;
+  height: 100vh;
+  width: 60vw;
+}
+
+// 地圖 Navbar
+
+.my_map_navbar {
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+
+  .for_select {
+    display: flex;
+    align-items: center;
+
+    .select_total_btn {
+      display: none;
+      align-items: center;
+      background: #fff;
+      width: 120px;
+      height: 40px;
+      cursor: grab;
+      justify-content: center;
+      // align-items: center;
+      margin: 10px;
+      border-radius: 2px;
+      box-shadow: 2px 3px 3px #ccc;
+      color: black;
+    }
+
+    .RWD_for_select {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .navbar_wrap {
+        background: #fff;
+        width: 120px;
+        height: 40px;
+        cursor: grab;
+        justify-content: center;
+        display: flex;
+        margin: 10px;
+        border-radius: 2px;
+        box-shadow: 2px 3px 3px #ccc;
+        color: black;
+
+        p {
+          margin: 0;
+          line-height: 40px;
+          color: #000;
+        }
+      }
+      .navbar_wrap:hover {
+        background: rgb(224, 214, 203);
+      }
+
+      .open_res {
+        align-items: center;
+      }
+
+      .cookday {
+        position: relative;
+        border-radius: 3px;
+
+        .cookday_navbar {
+          background: rgb(224, 214, 203);
+          box-shadow: 2px 3px 3px #ccc;
+          width: 120px;
+          height: 0px;
+          position: absolute;
+          z-index: 1;
+          transition: 0.2s;
+          border-radius: 3px;
+
+          p {
+            display: none;
+            color: #000;
+          }
+        }
+
+        .active {
+          height: 320px;
+          border-radius: 3px;
+          p {
+            display: block;
+            margin: 0;
+            border-radius: 3px;
+          }
+          p:hover {
+            background: #fff;
+          }
+        }
+      }
+    }
+    .RWD_for_select.active {
+      height: 100%;
+    }
+
+    .price {
+      position: relative;
+      border-radius: 3px;
+
+      .price_navbar {
+        background: rgb(224, 214, 203);
+        box-shadow: 2px 3px 3px #ccc;
+        width: 120px;
+        height: 0px;
+        position: absolute;
+        z-index: 1;
+        transition: 0.2s;
+        border-radius: 3px;
+
+        p {
+          display: none;
+          color: #000;
+        }
+      }
+
+      .active {
+        height: 160px;
+        border-radius: 3px;
+        p {
+          display: block;
+          margin: 0;
+          border-radius: 3px;
+        }
+        p:hover {
+          background: #fff;
+        }
+      }
+    }
+
+    .distance_wrap {
+      position: relative;
+      border-radius: 3px;
+
+      .distance_wrap_nav {
+        background: rgb(224, 214, 203);
+        box-shadow: 2px 3px 3px #ccc;
+        width: 120px;
+        height: 0px;
+        position: absolute;
+        z-index: 1;
+        transition: 0.2s;
+        border-radius: 3px;
+
+        p {
+          display: none;
+          color: #000;
+        }
+      }
+
+      .distance_wrap_nav.active {
+        height: 160px;
+        border-radius: 3px;
+        p {
+          display: block;
+          margin: 0;
+          border-radius: 3px;
+        }
+        p:hover {
+          background: #fff;
+        }
+      }
+      .distance_wrap_nav.active2 {
+        height: 80px;
+        border-radius: 3px;
+        p {
+          display: block;
+          margin: 0;
+          border-radius: 3px;
+        }
+        p:hover {
+          background: #fff;
+        }
+      }
+    }
+    .distance_wrap.active {
+      background: #0089a7;
+
+      p {
+        color: white;
+      }
+    }
+    .distance_wrap:hover {
+      p {
+        color: black;
+      }
+    }
+
+    .class_select_wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .res_class {
+        p {
+          margin: 0;
+          color: black;
+        }
+
+        .foodclass {
+          width: 50px;
+          height: 40px;
+          cursor: grab;
+          justify-content: center;
+          display: flex;
+          color: red;
+          border-radius: 3px;
+
+          p {
+            line-height: 40px;
+          }
+        }
+        .foodclass.active {
+          background: rgb(240, 190, 190);
+          color: black;
+        }
+      }
+
+      .cooktype_class {
+        p {
+          margin: 0;
+          color: black;
+        }
+
+        .cooktype {
+          width: 50px;
+          height: 40px;
+          cursor: grab;
+          justify-content: center;
+          display: flex;
+          color: red;
+          border-radius: 3px;
+        }
+        .cooktype.active {
+          background: rgb(190, 218, 240);
+          color: black;
+        }
+      }
+    }
+  }
+
+  .all_res {
+    p {
+      margin: 0;
+    }
+  }
+
+  .RWD_map_mode_btn {
+    display: none;
+    // background: brown;
+    width: 30vw;
+    height: 7vh;
+  }
+}
+
+// 地圖 navbar RWD
+@media screen and (max-width: 400px) {
+  .map_wrap {
+    padding: 10px 0;
+    font-size: 16px;
+
+    #mapwrap {
+      display: flex;
+      height: 60vh;
+    }
+  }
+
+  .my_map_navbar {
+    margin: 10px 0;
+    height: 7vh;
+    // flex-flow: column;
+
+    .for_select {
+      margin: 0 0;
+      flex-flow: column;
+      width: 40vw;
+      height: 400px;
+      overflow: hidden;
+      padding-right: 0;
+      padding-left: 0;
+      // background: blueviolet;
+
+      .select_total_btn {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+
+        p {
+          line-height: 40px;
+        }
+      }
+
+      .RWD_for_select {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: 0.1s;
+        z-index: 99;
+        background: #d6b9b9;
+
+        .navbar_wrap {
+          width: 90%;
+          margin: 5px auto;
+        }
+      }
+
+      .class_select_wrap {
+        flex-flow: column;
+
+        .res_class {
+          flex-flow: column;
+          justify-items: center;
+
+          p {
+            display: inline;
+            margin: 0;
+            color: black;
+          }
+        }
+
+        .cooktype_class {
+          flex-flow: column;
+        }
+      }
+    }
+
+    .all_res {
+      display: flex;
+      font-size: 14px;
+    }
+
+    .RWD_map_mode_btn {
+      display: flex;
+      width: 50vw;
+
+      .RWD_list_mode {
+        width: 50%;
+        height: 5vh;
+        background: white;
+        color: black;
+
+        p {
+          line-height: 40px;
+          margin: 0;
+        }
+      }
+      .RWD_map_mode {
+        width: 50%;
+        height: 5vh;
+        background: white;
+        color: black;
+
+        p {
+          line-height: 40px;
+          margin: 0;
+        }
+      }
+      .RWD_list_mode.active {
+        background: #c73e3a;
+        color: white;
+      }
+      .RWD_map_mode.active {
+        background: #c73e3a;
+        color: white;
+      }
+    }
+  }
+}
+
+// 列表卡片
+
+.list {
+  width: 40vw;
+  height: 100vh;
+  overflow: scroll;
+
+  .little_card {
+    border: 1px solid #888;
+    box-shadow: 3px 3px 6px #ccc;
+    margin: 10px 10px 15px 40px;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 5px;
+    background: white;
+
+    .map_card_tag {
+      width: 70px;
+      height: 190px;
+      background: url(/assets/images/listcard2.svg) no-repeat center 20px;
+      background-size: cotain;
+      position: absolute;
+      left: -40px;
+    }
+
+    .my_card{
+      width: 35vw;
+      margin: 10px;
+
+      p {
+        margin: 5px 0;
+      }
+
+      .card_photo {
+        width: 40%;
+        height: 70%;
+        margin: 0 10px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      h4 {
+        margin: 0 10px;
+      }
+
+      .comment {
+        margin: 0 0 5px 0;
+      }
+
+      .working_time {
+        display: flex;
+      }
+    }
+  }
+  .little_card.active {
+    background: rgba(172, 21, 21, 0.2);
+  }
+}
+.list.ball_RWD {
+  width: 100vw;
+}
+.list.map_mode {
+  display: none;
+}
+
+// 地圖列表卡片 RWD
+@media screen and (max-width: 375px) {
+  .list {
+    // height: 100vh;
+
+    .little_card {
+      margin: 0px 0px 0px 0px;
+      padding: 5px 10px;
+      border-radius: 0;
+      border-top: 0.5px solid #aaa;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+
+      p {
+        margin: 0;
+      }
+
+      .my_card {
+        width: 100%;
+
+        p {
+          margin: 0;
+        }
+
+        .card_photo {
+          width: 40%;
+          height: 70%;
+          margin: 0 10px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        h4 {
+          font-size: 20px;
+          margin: 0 10px;
+        }
+
+        .comment {
+          margin: 0 0 0 0;
+        }
+
+        .working_time {
+          display: none;
+        }
+
+        .card_veg {
+          display: none;
+        }
+      }
+      .map_card_tag {
+        display: none;
+      }
+    }
+  }
+}

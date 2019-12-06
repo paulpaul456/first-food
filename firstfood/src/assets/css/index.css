@@ -1,0 +1,241 @@
+/* Sunny Css ~~~*/
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* ~~~Sunny Css*/
+
+
+/* Paul Css~~~ */
+.testdiv {
+    height: 500px;
+}
+
+.section1 {
+    background: url("/assets/images/background.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 500px;
+}
+
+.section1-bean {
+    position: relative;
+    top: -50px;
+    max-width: 700px;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.section1-bean-img {
+    width: 100%;
+    height: 100%;
+}
+
+.look-box {
+    display: flex;
+}
+
+.look-box-p1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.look-box-p2 {
+    border-left: 1px solid rgb(161, 161, 161);
+    border-right: 1px solid rgb(161, 161, 161);
+    text-align: center;
+    margin: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    height: 50px;
+}
+
+.look-box-p3 {
+    line-height: 50px;
+}
+
+.vertical1 {
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    text-orientation: upright;
+    margin-left: 100px;
+}
+
+.vertical2 {
+    writing-mode: vertical-lr;
+    display: flex;
+    margin-top: 50px;
+    text-orientation: upright;
+    border-top: 1px solid rgb(161, 161, 161);
+    border-bottom: 1px solid rgb(161, 161, 161);
+    justify-content: center;
+    height: 330px;
+
+}
+
+.vertical3 {
+    position: relative;
+    top: -30px;
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    text-orientation: upright;
+}
+
+.vertical3-1 {
+    font-size: 30px;
+}
+
+.section1-right {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.up {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    top: 60px;
+    left: 200px;
+}
+
+.vertical4 {
+    width: 300px;
+    position: relative;
+    left: 840px;
+    top: -17px;
+    border-bottom: 2px solid rgb(77, 77, 77);
+    text-align: center;
+}
+
+/*以上為第一區塊*/
+/* .section2 {
+    background-color: rgb(253, 249, 249);
+}
+
+.section2-image {
+    max-width: 120px;
+    height: 120px;
+    margin: 6px;
+}
+
+.section2-images {
+    display: flex;
+}
+
+.section2-left {
+    margin-top: 100px;
+}
+
+.section2-text1 {
+    border-top: 1px solid black;
+    max-width: 350px;
+    border-bottom: 1px dashed black;
+    padding: 8px 0 8px 0;
+}
+
+.section2-text2 {
+
+    max-width: 350px;
+    border-bottom: 1px dashed black;
+    padding: 0 0 12px 0;
+}
+
+.section2-text3 {
+    border-top: 1px solid black;
+    max-width: 250px;
+    margin-top: 38px;
+    padding: 8px 0 8px 0;
+}
+
+.section2-line {
+    height: 1px;
+    max-width: 660px;
+    background-color: gainsboro;
+}
+
+.section2-right1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 20px 0;
+}
+
+.section2-right2 {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px 0 20px 0;
+    border-top: 1px dashed rgb(196, 193, 193);
+    border-bottom: 1px dashed rgb(196, 189, 189);
+}
+
+.section2-right3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2-line {
+    width: 1000px;
+    height: 1px;
+    background-color: rgb(196, 189, 189);
+}
+
+.oneComment {
+    width: 300px;
+    position: relative;
+    top: 2px;
+    left: -30px;
+    border-bottom: 2px solid rgb(77, 77, 77);
+    text-align: center;
+} */
+
+/*以上為第二區塊*/
+
+.section3-cont {
+    margin-top: 100px;
+}
+
+.section3-right {
+    text-align: center;
+    position: relative;
+}
+
+.section3-right-L1 {
+    position: absolute;
+    top: 125px;
+    right: 50px;
+}
+
+.section3-right-L2 {
+    position: absolute;
+    top: 350px;
+    left: 60px;
+}
+
+.section3-right-text {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: 80px;
+    top: 50px;
+
+}
+
+.section3-right-text2 {
+    font-size: 10px;
+    position: absolute;
+    top: 600px;
+}
